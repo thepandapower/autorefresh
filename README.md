@@ -18,7 +18,7 @@
 <h1>Required Setup</h1>
 
 1. Have python installed
-2. Please install all the required libraries in requirements.txt by running "pip install requirements.txt" in temrinal
+2. Please install all the required libraries in requirements.txt by running "pip install -r requirements.txt" in temrinal
 
 <br></br>
 <h1>Customizing to your computer</h1>
