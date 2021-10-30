@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 from time import time, sleep
 import pyautogui
+import sys
 
 
 item_x_off = 850
@@ -28,11 +29,17 @@ bookmark = cv2.imread('bookmark.png')
 mystic = cv2.imread('mystic.png')
 
 threshold = 0.975
-skystone_limit = 636
-gold_limit = 3*10**6
+skystone_limit = 2300
+gold_limit = 6*10**6
 refresh_count = 0
 bm_count = 0
 mystic_count = 0
+
+if(len(sys.argv) > 1):
+	skystone_limit = int(sys.argv[1])
+	if(len(sys.argv) > 2):
+		gold_limit = int(sys.argv[2])
+
 
 def click(x, y):
 	pyautogui.moveTo(x, y)
@@ -82,6 +89,7 @@ def refresh():
 	click(confirm_x, confirm_y)
 	refresh_count += 1
 
+print('Starting with skystone limit of ' + str(skystone_limit) + ' and gold limit of ' + str(gold_limit))
 print('press s to start and hold q to quit')
 keyboard.wait('s')
 while (refresh_count + 1)*3 <= skystone_limit and (bm_count + mystic_count + 1) * 300000 <= gold_limit:
