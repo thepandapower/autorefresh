@@ -17,8 +17,14 @@
 
 <h1>Required Setup</h1>
 
-1. Have python installed
-2. Please install all the required libraries in requirements.txt by running "pip install -r requirements.txt" in temrinal
+
+1. Have Python installed, guaranteed to work on Python 3.9.7 found here: https://www.python.org/downloads/release/python-397/.
+ - MAKE SURE TO CHECK THE BOX FOR "add to PATH" OPTION DURING INSTALLATION!
+2. Have Git and some terminal installed, if you don't know what this is, then just follow installation instructions from here: https://www.stanleyulili.com/git/how-to-install-git-bash-on-windows/
+3. Clone the git repo to some desired destination folder.
+ - (If you don't know what this means, open up git bash in desired destination folder and type `git clone https://github.com/thepandapower/autorefresh.git`)
+4. Please install all the required libraries in requirements.txt by running `pip install -r requirements.txt` in terminal inside the autorefresh folder
+5. Follow the instructions in the Customizing to your computer section.
 
 <br></br>
 <h1>Customizing to your computer</h1>
